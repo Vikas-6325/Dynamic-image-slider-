@@ -13,18 +13,13 @@ function prevSlide() {
     slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
 }
 
-// Optional: Auto-slide
 let autoSlideInterval;
 function startAutoSlide() {
-    autoSlideInterval = setInterval(nextSlide, 3000); // Change interval as needed
+    autoSlideInterval = setInterval(nextSlide, 3000); 
 }
 
 function stopAutoSlide() {
     clearInterval(autoSlideInterval);
 }
 
-// Add event listeners for navigation (if needed)
-// ...
-
-// Start auto-sliding (optional)
 startAutoSlide(); 
